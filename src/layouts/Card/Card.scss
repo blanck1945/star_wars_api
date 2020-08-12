@@ -27,21 +27,65 @@
   }
   .card_data_box {
     display: flex;
-    align-items: center;
     @media (max-width: 575.98px) and (orientation: portrait) {
       flex-direction: column;
       align-items: center;
+      justify-content: center;
+    }
+    .card_planet_data {
+      display: flex;
+      width: 90%;
+      align-items: center;
+      justify-content: flex-start;
+      @media (max-width: 575.98px) and (orientation: portrait) {
+        flex-direction: column;
+        align-items: center;
+      }
+      .card_data {
+        margin: 0 5px;
+        @media (max-width: 575.98px) and (orientation: portrait) {
+          margin-left: 20px;
+        }
+      }
     }
     .card_data {
       margin-left: 5px;
+      text-align: left;
+      text-align: center;
       font-weight: 300;
+      display: flex;
+      flex-direction: row;
+      margin-right: 50px;
       font-size: 0.9rem;
       @media (max-width: 575.98px) and (orientation: portrait) {
+        width: 70%;
+        margin: auto;
         font-size: 0.7rem;
+        padding: 5px 0;
+        padding-left: 15px;
       }
+    }
+    .popu {
+      width: 90%;
+      display: flex;
+      align-items: center;
+      padding-left: 5px;
     }
     .card_strong {
       font-weight: 700;
+      width: 10%;
+      text-align: left;
+      margin: 3px auto;
+      @media (max-width: 575.98px) and (orientation: portrait) {
+        text-align: center;
+        width: 90%;
+      }
+    }
+    .strong_popu {
+      margin-right: 9px;
+    }
+    .strong_width {
+      width: 15%;
     }
   }
 }

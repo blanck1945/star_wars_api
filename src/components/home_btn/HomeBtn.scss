@@ -24,8 +24,9 @@
     padding: 8px 16px;
     color: $text;
     @media (max-width: 575.98px) and (orientation: portrait) {
-      width: 50px;
-      font-size: 0.8rem;
+      width: 40px;
+      font-size: 0.7rem;
+      padding: 0 3px;
     }
   }
   .btn_page:hover {

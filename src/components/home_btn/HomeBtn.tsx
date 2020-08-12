@@ -29,7 +29,7 @@ const HomeBtn = ({ page, setPage, data, setSearch, search }: HomeBtnProps) => {
   return (
     <div className="btn_box">
       <button className="btn_page" onClick={() => changePage(page, minus)}>
-        Previous
+        Prev
       </button>
       <div className="btn_page">{page}</div>
       <button className="btn_page" onClick={() => changePage(page, plus)}>

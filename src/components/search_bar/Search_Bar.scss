@@ -13,13 +13,10 @@
   .search_inp {
     border: none;
     height: 25px;
-    width: 50%;
+    width: 90%;
     background-color: $black;
     color: $yell;
     padding-left: 5px;
-    @media (max-width: 575.98px) and (orientation: portrait) {
-      padding-left: 15px;
-    }
   }
   .search_btn {
     background-color: $black;

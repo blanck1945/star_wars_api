@@ -7,16 +7,22 @@ interface CardProps {
 }
 
 const Card_Planet = ({ data }: CardProps) => {
+  const terrainIt = data.terrain.split(" ");
+
   return (
     <div className="card_box">
       <h3 className="card_title">{data.name}</h3>
       <div className="card_data_box">
-        <strong className="card_strong">Population:</strong>
-        <h3 className="card_data">{data.population}</h3>
+        <strong className="card_strong strong_popu">Population:</strong>
+        <h3 className="card_data popu">{data.population}</h3>
       </div>
       <div className="card_data_box">
         <strong className="card_strong">Terrain: </strong>
-        <h3 className="card_data">{data.terrain}</h3>
+        <div className="card_planet_data">
+          {terrainIt.map((el: string) => (
+            <h3 className="card_data">{el}</h3>
+          ))}
+        </div>
       </div>
     </div>
   );
