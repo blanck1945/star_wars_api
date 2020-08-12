@@ -1,14 +1,16 @@
 @import "../../main.scss";
 
 .btn_box {
-  width: 60%;
+  width: 85%;
   height: 60px;
   display: flex;
   align-items: center;
-  margin: 3px 0;
+  margin: 12px auto;
   border-radius: 4px;
   justify-content: space-evenly;
   background-color: $black;
+  @media (max-width: 575.98px) and (orientation: portrait) {
+  }
   .btn_page {
     border: 1px solid $yell;
     width: 60px;
@@ -21,6 +23,10 @@
     background-color: $grey;
     padding: 8px 16px;
     color: $text;
+    @media (max-width: 575.98px) and (orientation: portrait) {
+      width: 50px;
+      font-size: 0.8rem;
+    }
   }
   .btn_page:hover {
     background-color: brown;

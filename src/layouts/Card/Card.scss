@@ -13,20 +13,32 @@
   transition: 0.3s ease-in-out;
   border: 1px solid $yell;
   cursor: pointer;
-  @media (max-width: 768px) {
-    min-width: 300px;
+  @media (max-width: 575.98px) and (orientation: portrait) {
+    min-width: 80%;
+    height: 35%;
   }
   .card_title {
     font-size: 1rem;
     color: $yell;
+    @media (max-width: 575.98px) and (orientation: portrait) {
+      text-align: center;
+      margin-bottom: 5px;
+    }
   }
   .card_data_box {
     display: flex;
     align-items: center;
+    @media (max-width: 575.98px) and (orientation: portrait) {
+      flex-direction: column;
+      align-items: center;
+    }
     .card_data {
       margin-left: 5px;
       font-weight: 300;
       font-size: 0.9rem;
+      @media (max-width: 575.98px) and (orientation: portrait) {
+        font-size: 0.7rem;
+      }
     }
     .card_strong {
       font-weight: 700;
