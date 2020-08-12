@@ -24,7 +24,7 @@ const App: React.FunctionComponent = () => {
 };
 
 reactDOM.render(
-  <HashRouter>
+  <HashRouter basename="/star_wars_api">
     <SWRConfig value={{ revalidateOnFocus: false }}>
       <React.StrictMode>
         <App />
