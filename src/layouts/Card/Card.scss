@@ -1,0 +1,37 @@
+@import "../../main.scss";
+.card_box {
+  width: 650px;
+  padding: 4px 0;
+  padding-left: 5px;
+  margin: 9px 0;
+  min-height: 50px;
+  font-size: 0.9rem;
+  background-color: $black;
+  font-weight: 300;
+  color: $text;
+  border-radius: 4px;
+  transition: 0.3s ease-in-out;
+  border: 1px solid $yell;
+  cursor: pointer;
+  .card_title {
+    font-size: 1rem;
+    color: $yell;
+  }
+  .card_data_box {
+    display: flex;
+    align-items: center;
+    .card_data {
+      margin-left: 5px;
+      font-weight: 300;
+      font-size: 0.9rem;
+    }
+    .card_strong {
+      font-weight: 700;
+    }
+  }
+}
+.card_box:hover {
+  background-color: $grey;
+  transition: 0.3s ease-in-out;
+  color: white;
+}
