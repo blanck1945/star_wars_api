@@ -4,6 +4,6 @@ interface ApiRoutes {
 }
 
 export const apiCalls: ApiRoutes = {
-  planetUrl: "https://swapi.dev/api/planets",
-  peopleUrl: "https://swapi.dev/api/people",
+  planetUrl: "http://swapi.dev/api/planets",
+  peopleUrl: "http://swapi.dev/api/people",
 };
