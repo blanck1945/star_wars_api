@@ -12,7 +12,7 @@ const Card_People = ({ data }: CardProps) => {
       <h3 className="card_title">{data.name}</h3>
       <div className="card_data_box">
         <strong className="card_strong strong_popu">Birthday:</strong>
-        <h3 className="card_data popu">{data.birth_year}</h3>
+        <h3 className="popu">{data.birth_year}</h3>
       </div>
       <div className="card_data_box">
         <strong className="card_strong strong_width">Eye Color: </strong>
