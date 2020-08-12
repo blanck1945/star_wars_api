@@ -9,7 +9,7 @@
     "dev": "webpack-dev-server",
     "start": "webpack-dev-server --config webpack.dev.js",
     "build": "webpack --config webpack.prod.js",
-    "predeploy": "npm run build",
+    "predeploy": "yarn run build",
     "deploy": "gh-pages -d dist"
   },
   "keywords": [],

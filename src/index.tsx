@@ -1,6 +1,6 @@
 import * as React from "react";
 import * as reactDOM from "react-dom";
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import { HashRouter, Switch, Route } from "react-router-dom";
 import "./main.scss";
 import Navbar from "./layouts/Navbar/navbar";
 import Footer from "./layouts/Footer/Footer";
@@ -24,12 +24,12 @@ const App: React.FunctionComponent = () => {
 };
 
 reactDOM.render(
-  <Router>
+  <HashRouter>
     <SWRConfig value={{ revalidateOnFocus: false }}>
       <React.StrictMode>
         <App />
       </React.StrictMode>
     </SWRConfig>
-  </Router>,
+  </HashRouter>,
   document.getElementById("root")
 );
